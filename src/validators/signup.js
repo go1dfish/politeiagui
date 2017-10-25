@@ -1,4 +1,4 @@
-import { emailValidator, isRequiredValidator, passwordVerifyValidator } from "../../validators";
+import { emailValidator, isRequiredValidator, passwordVerifyValidator } from "./util";
 
 const validate = values => {
   const errors = {};

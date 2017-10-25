@@ -6,7 +6,6 @@ import validate from "./validator";
 
 const FindPage = ({
   isSaving,
-  error,
   onFind,
   handleSubmit,
 }) => isSaving ? <LoadingPage /> : (

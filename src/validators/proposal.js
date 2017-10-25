@@ -1,6 +1,6 @@
 import { forEach } from "lodash";
-import { isFileValid } from "../ProposalImages/helpers";
-import { isRequiredValidator } from "../../validators";
+import { isFileValid } from "../components/ProposalImages/helpers";
+import { isRequiredValidator } from "./util";
 
 const validate = (values, { policy }) => {
   const errors = {};
@@ -19,6 +19,8 @@ const validate = (values, { policy }) => {
       }
     });
   }
+
+  console.log({ values, errors });
 
   return errors;
 };
